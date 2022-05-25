@@ -16,7 +16,6 @@ class createTableFuncionarios extends Migration
 					$table->string('CPF', );
 					$table->string('cargo', );
 					$table->string('salário', );
-                    $table->string('cidade', );
             		$table->timestamps();
         });
     }
