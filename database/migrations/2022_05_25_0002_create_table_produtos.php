@@ -18,7 +18,7 @@ class createTableProdutos extends Migration
                     $table->string('preco', );
             		$table->integer('registro');
             		$table->timestamps();
-        	});
+      });
     }
 
     public function down()
