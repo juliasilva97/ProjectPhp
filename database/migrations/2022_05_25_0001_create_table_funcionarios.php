@@ -10,14 +10,14 @@ class createTableFuncionarios extends Migration
     {
         	Schema::create('Funcionarios', function (Blueprint $table)
 	 {
-           			$table->increments('id_funcionario');
+           			$table->increments('id');
             		$table->string('nome', );
             		$table->string('RG', );
 					$table->string('CPF', );
 					$table->string('cargo', );
 					$table->string('salário', );
             		$table->timestamps();
-        	});
+        });
     }
 
     public function down()
