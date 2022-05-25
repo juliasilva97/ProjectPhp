@@ -11,7 +11,7 @@ class createTableProdutos extends Migration
     {
         	Schema::create('Empresas', function (Blueprint $table)
 	 {
-           			$table->increments('id_local');
+           			$table->increments('id');
 				  	 $table->integer('CEP');
             		$table->string('cidade', );
             		$table->string('estado', );
