@@ -19,7 +19,7 @@ class createTableProdutos extends Migration
 					$table->string('bairro', );
                     $table->integer('número', );
             		$table->timestamps();
-        	});
+       });
     }
 
     public function down()
