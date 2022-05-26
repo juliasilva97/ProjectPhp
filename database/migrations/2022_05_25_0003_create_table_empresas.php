@@ -13,8 +13,7 @@ class createTableProdutos extends Migration
 	 {
            			$table->('id');
 				  	$table->string('CEP');
-            		$table->string('cidade') unsigned();
-            1       $table->foreing('cidade')->references('cidade_trabalho')->on('funcionario');
+            		$table->string('cidade')
             		$table->string('estado' );
 					$table->string('rua');
 					$table->string('bairro');
