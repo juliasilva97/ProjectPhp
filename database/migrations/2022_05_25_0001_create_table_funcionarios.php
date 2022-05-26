@@ -14,6 +14,8 @@ class createTableFuncionarios extends Migration
             		$table->string('nome');
             		$table->string('RG');
 					$table->string('CPF');
+                    $table->string('cidade_trabalho') unsigned();
+            1       $table->foreing('cidade_trabalho')->references('cidade')->on('empresas');
 					$table->string('cargo');
 					$table->string('salário');
             		$table->timestamps();
