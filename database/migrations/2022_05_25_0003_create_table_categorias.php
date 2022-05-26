@@ -11,14 +11,13 @@ class createTableProdutos extends Migration
     {
         	Schema::create('Categorias', function (Blueprint $table)
 	 {
-           			$table->('id') unsigned();
-                $table->foreing('id_categoria')->references('categoria')->on('produto');
-				  	    $table->string('alimento');
-            		$table->string('roupas') 
-            		$table->string('prod_limpeza');
+           			      $table->('id') unsigned();
+				  	      $table->string('alimento');
+            		      $table->string('roupas') 
+            		      $table->string('prod_limpeza');
 					      $table->string('cosmeticos');
 					      $table->string('papelaria');
-            		$table->timestamps();
+            		      $table->timestamps();
        });
     }
 
