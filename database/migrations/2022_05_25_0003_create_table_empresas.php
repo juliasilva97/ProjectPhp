@@ -12,6 +12,7 @@ class createTableProdutos extends Migration
         	Schema::create('Empresas', function (Blueprint $table)
 	 {
            			$table->('id');
+                     $table->string('nome');
 				  	$table->string('CEP');
             		$table->string('cidade')
             		$table->string('estado' );
