@@ -13,7 +13,7 @@ class createTableFuncionarios extends Migration
            			$table->('id');
             		$table->string('nome');
             		$table->string('RG');
-					$table->string('CPF');
+					$table->string('CPF')->unique;
                     $table->string('empresa_nome') unsigned();
             1       $table->foreing('empresa_nome')->references('nome')->on('empresas');
 					$table->string('cargo');
