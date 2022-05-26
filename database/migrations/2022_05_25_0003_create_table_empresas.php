@@ -11,13 +11,14 @@ class createTableProdutos extends Migration
     {
         	Schema::create('Empresas', function (Blueprint $table)
 	 {
-           			$table->increments('id');
-				  	 $table->integer('CEP');
-            		$table->string('cidade', );
-            		$table->string('estado', );
-					$table->string('rua', );
-					$table->string('bairro', );
-                    $table->integer('número', );
+           			$table->('id');
+				  	$table->string('CEP');
+            		$table->string('cidade') unsigned();
+            1       $table->foreing('cidade')->references('cidade_trabalho')->on('funcionario');
+            		$table->string('estado' );
+					$table->string('rua');
+					$table->string('bairro');
+                    $table->string('número' );
             		$table->timestamps();
        });
     }
