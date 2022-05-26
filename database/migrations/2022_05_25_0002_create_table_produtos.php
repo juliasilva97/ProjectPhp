@@ -12,7 +12,8 @@ class createTableProdutos extends Migration
 	 {
            			$table->('id');
             		$table->string('nome');
-            		$table->string('categoria');
+            		$table->string('categoria') unsigned();
+                    $table->foreing('categoria')->references('id_categoria')->on('categorias');
 					$table->string('lote');
 					$table->string('validade');
                     $table->string('preco');
